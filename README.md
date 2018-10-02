@@ -1,30 +1,36 @@
-# Jekyll Thumb
+# jekyll-thumb
 
 This Jekyll plugin automatically generates image thumnails using the [vips](https://jcupitt.github.io/libvips) library and the accompanying ruby wrapper, [ruby-vips.](https://github.com/jcupitt/ruby-vips)
 
 libvips is like imagemagick but less bloated.
 
-The plugin adds a `thumb` Liquid tag that can be used like this:
+The plugin adds a `thumb` Liquid tag that can be used like so:
 
 ```html
 {% thumb src="/image.png" width="100" %}
 ```
 
-This will generate the right images and output something like:
+This will generate the thumbnail and output something like:
 
 ```html
-<a href="/image.png" target="_blank" class="thumb"><img src="/image-100w.png" width="100" height="50"></a>
+<a href="/image.png" target="_blank" class="thumb">
+  <img src="/image-100w.png" width="100" height="50">
+</a>
 ```
+
+## Development Status
+
+This project was made because I needed thumbnails for [my blog](https://cleverna.me) and I didn't want to use imagemagick. I made it in like an hour and it definitely has bugs. OTOH it's 119 lines of code so if you don't like something you can just change it.
 
 ## Installation
 
-Add this line to your Gemfile:
+Add the gem to your Gemfile:
 
 ```ruby
 gem 'jekyll-thumb'
 ```
 
-And then execute:
+Then bundle:
 
     $ bundle
 
@@ -35,13 +41,6 @@ Or install it yourself as:
 Finally install vips using your operating system's package manager, eg.
 
     $ brew install vips
-
-<!-- Then add the gem to your Jekyll `_config.yml`:
-
-```yml
-gems:
-  - jekyll-thumb
-``` -->
 
 ## Usage
 
@@ -89,7 +88,7 @@ Make an issue, send a pull request, you know the drill.
 
 ## Acknowledgements
 
-Project structure shamelessly stolen from [netlify/jekyll-srcset](https://github.com/netlify/jekyll-srcset)
+Project shamelessly ripped off of [netlify/jekyll-srcset](https://github.com/netlify/jekyll-srcset), it's basically a find-and-replace job.
 
 ## Copyright
 
