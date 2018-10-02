@@ -2,7 +2,7 @@
 
 This Jekyll plugin automatically generates image thumnails using the [vips](https://jcupitt.github.io/libvips) library and the accompanying ruby wrapper, [ruby-vips.](https://github.com/jcupitt/ruby-vips)
 
-libvips is like imagemagick but less bloated.
+libvips is like imagemagick but more modern.
 
 The plugin adds a `thumb` Liquid tag that can be used like so:
 

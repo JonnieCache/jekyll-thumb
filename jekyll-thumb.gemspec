@@ -9,11 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jonathan Davies"]
   spec.email         = ["jonnie@cleverna.me"]
   spec.summary       = %q{This Jekyll plugin adds a thumb tag which will autogenerate image thumbnails}
-  spec.description   = %q{
-  This Jekyll plugin autogenerates image thumbnails using the vips library
-
-  \{% thumb src="/image.png" width="100" %\}
-}
+  spec.description   = %q{This Jekyll plugin autogenerates image thumbnails using the vips library}
   spec.homepage      = "https://github.com/JonnieCache/jekyll-thumb"
   spec.license       = "MIT"
 
