@@ -1,7 +1,5 @@
 require "ruby-vips"
 require "digest/sha1"
-require "pry"
-require "pry-byebug"
 
 module Jekyll
   class ThumbTag < Liquid::Tag
