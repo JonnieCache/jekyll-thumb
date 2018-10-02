@@ -69,7 +69,7 @@ thumb:
   optipng: true
 ```
 
-To your `\_config.yml`
+To your `_config.yml`
 
 Currently the plugin doesn't optimize other image formats, except for stripping color palettes.
 
