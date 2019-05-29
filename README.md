@@ -58,6 +58,8 @@ To use variables for the image or the dimensions, simply leave out the quotes:
 {% thumb src=page.cover_image height=page.cover_image_height %}
 ```
 
+By default this will wrap the resized `img` in a link to the original, with a `target="_blank"` attribute. To supress this, pass a `link=false` option to the `thumb` tag.
+
 ## Optipng
 
 If you have `optipng` installed and in your PATH, you can tell the plugin to run it on all generated png images.
