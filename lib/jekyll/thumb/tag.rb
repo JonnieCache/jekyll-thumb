@@ -23,7 +23,10 @@ module Jekyll
       site = context.registers[:site]
       img_attrs = generate_image(site, options["src"], options)
 
-      %Q{<a href="#{options['src']}" target="_blank" class="thumb"><img #{options.merge(img_attrs).map {|k,v| "#{k}=\"#{v}\""}.join(" ")}></a>}
+      img = %Q{<img #{options.merge(img_attrs).map {|k,v| "#{k}=\"#{v}\""}.join(" ")}>}
+      return img if options['link'] == false
+      
+      %Q{<a href="#{options['src']}" target="_blank" class="thumb">#{img}</a>}
     end
 
     def parse_options(markup, context)
